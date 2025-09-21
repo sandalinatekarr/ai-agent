@@ -77,17 +77,30 @@ This project is an **AI-powered research assistant** that fetches online sources
 
 ## Example Queries
 
-- `"Impact of Mediterranean diet on heart health"`  
-- `"Latest AI research in education"`  
-- `"Benefits of intermittent fasting"`
+1. **Impact of Mediterranean diet on heart health**  
+   ![Mediterranean Diet](mediterranean_diet_search.png)
+
+2. **Latest AI research in education**  
+   ![AI in Education](ai_education_search.png)
+
+3. **Dummy PDF extraction**  
+   ![Dummy PDF](dummy_pdf_search.png)
 
 ---
 
-## Demo Video
+## History Page
 
-Watch the AI Agent in action:
+- **Saved Reports / History**  
+  ![History Page](history_page.png)
 
-[![AI Agent Demo](https://drive.google.com/uc?id=1dbZrXH0aljAseATpTnVZT3ewFlpb9Ntl)](https://drive.google.com/file/d/1dbZrXH0aljAseATpTnVZT3ewFlpb9Ntl/view?usp=sharing)
+- **Clear History Button**  
+  ![Clear History](clear_history.png)
+
+---
+
+## Demo
+
+**Google Drive Link**: [Demo Video](https://drive.google.com/file/d/1dbZrXH0aljAseATpTnVZT3ewFlpb9Ntl/view?usp=sharing)
 
 ---
 
@@ -102,3 +115,4 @@ Watch the AI Agent in action:
 ## License
 
 MIT License
+
