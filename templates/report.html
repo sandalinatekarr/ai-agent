@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f8f9fa;
+      color: #333;
+    }
+    h1 { color: #dc3545; }
+    h2 { color: #17a2b8; margin-top: 30px; }
+    p { line-height: 1.6; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #007bff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Report: {{ report.query }}</h1>
+  <p><strong>Saved at:</strong> {{ report.created_at }}</p>
+
+  <h2>Title</h2>
+  <p>{{ summary.title }}</p>
+
+  <h2>Key Points</h2>
+  <ul>
+    {% if summary.key_points %}
+      {% for point in summary.key_points %}
+        <li>{{ point }}</li>
+      {% endfor %}
+    {% else %}
+      <li>No key points available</li>
+    {% endif %}
+  </ul>
+
+  <h2>Summary</h2>
+  <p>{{ summary.summary }}</p>
+
+  <h2>Sources</h2>
+  <ul>
+    {% if sources %}
+      {% for s in sources %}
+        <li><a href="{{ s }}" target="_blank">{{ s }}</a></li>
+      {% endfor %}
+    {% else %}
+      <li>No sources available</li>
+    {% endif %}
+  </ul>
+
+  <p><a href="/history">Back to History</a></p>
+</body>
+</html>
