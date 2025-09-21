@@ -78,23 +78,23 @@ This project is an **AI-powered research assistant** that fetches online sources
 ## Example Queries
 
 1. **Impact of Mediterranean diet on heart health**  
-   ![Mediterranean Diet](mediterranean_diet_search.png)
+   ![Mediterranean Diet](screenshots/mediterranean_diet_search.png)
 
 2. **Latest AI research in education**  
-   ![AI in Education](ai_education_search.png)
+   ![AI in Education](screenshots/ai_education_search.png)
 
 3. **Dummy PDF extraction**  
-   ![Dummy PDF](dummy_pdf_search.png)
+   ![Dummy PDF](screenshots/dummy_pdf_search.png)
 
 ---
 
 ## History Page
 
 - **Saved Reports / History**  
-  ![History Page](history_page.png)
+  ![History Page](screenshots/history_page.png)
 
 - **Clear History Button**  
-  ![Clear History](clear_history.png)
+  ![Clear History](screenshots/clear_history.png)
 
 ---
 
@@ -115,4 +115,5 @@ This project is an **AI-powered research assistant** that fetches online sources
 ## License
 
 MIT License
+
 
