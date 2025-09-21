@@ -1,20 +1,22 @@
 # AI Agent
 
-This project is an **AI-powered research assistant** that can fetch online sources, extract content (HTML/PDF), summarize it, and save structured reports in a database. Users can view past reports through a web interface.
+This project is an **AI-powered research assistant** that fetches online sources, extracts content (HTML/PDF), summarizes it using a large language model (Google Gemini), and saves structured reports in a database. Users can view past reports through a simple web interface.
 
 ---
 
 ## Features
 
-- **Query the AI agent**: Ask about any topic, e.g., "Impact of Mediterranean diet on heart health."
-- **Web search**: Uses SerpAPI to find 2–3 relevant sources online.
-- **Content extraction**: Extracts text from HTML pages and PDF files using `trafilatura` and `pypdf`.
-- **LLM-based summarization**: Uses Google Gemini to generate structured summaries with:
-  - Title  
-  - Key points (3–6 bullets)  
-  - Short summary (2–3 sentences)  
-  - List of source URLs
-- **Database storage**: Reports are saved in SQLite for later retrieval.
+- **Query the AI agent**: Ask about any topic, e.g., `"Impact of Mediterranean diet on heart health"`.
+- **Web search**: Uses SerpAPI to find 2–3 relevant online sources.
+- **Content extraction**: Extracts text from:
+  - HTML pages using `trafilatura`
+  - PDF files using `pypdf`
+- **LLM-based summarization**: Generates structured summaries with:
+  - **Title**  
+  - **Key points** (3–6 bullets)  
+  - **Short summary** (2–3 sentences)  
+  - **List of source URLs**
+- **Database storage**: Reports saved in SQLite for later retrieval.
 - **Web interface**:  
   - Home page to enter queries  
   - History page to see past reports  
@@ -29,7 +31,7 @@ This project is an **AI-powered research assistant** that can fetch online sourc
 - **Backend**: Python, Flask  
 - **LLM**: Google Gemini API  
 - **Web search**: SerpAPI  
-- **Content extraction**: `trafilatura` for HTML, `pypdf` for PDFs  
+- **Content extraction**: `trafilatura` (HTML), `pypdf` (PDF)  
 - **Database**: SQLite  
 - **Frontend**: HTML templates with Jinja2  
 
@@ -81,17 +83,18 @@ This project is an **AI-powered research assistant** that can fetch online sourc
 
 ---
 
-## Demo
+## Demo Video
 
-**Inline GIF Preview (optional)**:  
-![Demo GIF](demo.gif)
+Watch the AI Agent in action:
 
+[![AI Agent Demo](https://drive.google.com/uc?id=1dbZrXH0aljAseATpTnVZT3ewFlpb9Ntl)](https://drive.google.com/file/d/1dbZrXH0aljAseATpTnVZT3ewFlpb9Ntl/view?usp=sharing)
 
+---
 
 ## Notes
 
 - Supports both HTML and PDF extraction.  
-- If a source cannot be fetched, it is skipped with a warning.  
+- Sources that cannot be fetched are skipped with a warning.  
 - History can be cleared from the web interface.  
 
 ---
