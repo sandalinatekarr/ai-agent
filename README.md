@@ -25,15 +25,19 @@ This project is an **AI-powered research assistant** that fetches online sources
 - **Error handling**: Gracefully handles blocked pages, fetch errors, and unsupported content types.
 
 ---
+## Technology Used & Choice Rationale
 
-## Tech Stack
+- **Python** – Main backend language for flexibility, easy API integration, and fast prototyping.  
+- **Flask** – Lightweight web framework to build the web interface (home, history, report pages) quickly and efficiently.  
+- **SerpAPI** – Chosen for web search because it provides structured search results from Google reliably without scraping, reducing the chance of blocked requests.  
+- **trafilatura** – HTML content extraction library; extracts clean, meaningful text while removing boilerplate from web pages.  
+- **pypdf** – PDF parsing library; reliable for extracting text directly from PDFs without converting them to images.  
+- **Google Gemini API** – LLM used to summarize multiple sources into structured reports; chosen for concise summaries and bullet point generation.  
+- **SQLite** – Lightweight database to store past reports; simple to set up and integrates easily with Python.  
+- **HTML + Jinja2 templates** – Frontend for rendering dynamic content on home, history, and report pages without a heavy frontend framework.  
 
-- **Backend**: Python, Flask  
-- **LLM**: Google Gemini API  
-- **Web search**: SerpAPI  
-- **Content extraction**: `trafilatura` (HTML), `pypdf` (PDF)  
-- **Database**: SQLite  
-- **Frontend**: HTML templates with Jinja2  
+**Why these choices:**  
+This combination ensures the agent can fetch and extract content from both web pages and PDFs reliably. Python + Flask keeps the system lightweight and maintainable. Gemini ensures high-quality summaries. SQLite provides persistent memory for the agent’s reports, making the project self-contained and easy to run locally.
 
 ---
 
@@ -115,5 +119,6 @@ This project is an **AI-powered research assistant** that fetches online sources
 ## License
 
 MIT License
+
 
 
