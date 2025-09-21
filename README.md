@@ -30,6 +30,7 @@ This project is an **AI-powered research assistant** that fetches online sources
 - **Python** – Main backend language for flexibility, easy API integration, and fast prototyping.  
 - **Flask** – Lightweight web framework to build the web interface (home, history, report pages) quickly and efficiently.  
 - **SerpAPI** – Chosen for web search because it provides structured search results from Google reliably without scraping, reducing the chance of blocked requests.  
+- **BeautifulSoup** – HTML parser used along with `trafilatura` to cleanly parse and extract text from complex HTML structures. This ensures accurate extraction when `trafilatura` alone cannot handle certain pages.  
 - **trafilatura** – HTML content extraction library; extracts clean, meaningful text while removing boilerplate from web pages.  
 - **pypdf** – PDF parsing library; reliable for extracting text directly from PDFs without converting them to images.  
 - **Google Gemini API** – LLM used to summarize multiple sources into structured reports; chosen for concise summaries and bullet point generation.  
@@ -37,7 +38,7 @@ This project is an **AI-powered research assistant** that fetches online sources
 - **HTML + Jinja2 templates** – Frontend for rendering dynamic content on home, history, and report pages without a heavy frontend framework.  
 
 **Why these choices:**  
-This combination ensures the agent can fetch and extract content from both web pages and PDFs reliably. Python + Flask keeps the system lightweight and maintainable. Gemini ensures high-quality summaries. SQLite provides persistent memory for the agent’s reports, making the project self-contained and easy to run locally.
+This combination ensures the agent can fetch and extract content from both web pages and PDFs reliably. BeautifulSoup + trafilatura handles edge cases in HTML parsing. Python + Flask keeps the system lightweight and maintainable. Gemini ensures high-quality summaries. SQLite provides persistent memory for the agent’s reports, making the project self-contained and easy to run locally.
 
 ---
 
@@ -119,6 +120,7 @@ This combination ensures the agent can fetch and extract content from both web p
 ## License
 
 MIT License
+
 
 
 
